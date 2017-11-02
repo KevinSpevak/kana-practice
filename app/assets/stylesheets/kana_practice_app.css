@@ -32,15 +32,15 @@ body {
 }
 
 .practice-section {
+  position: relative;
   display: inline-block;
   width: 100%;
   padding: 10px;
 }
 
 .practice-prompt {
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .practice-answer {
@@ -55,4 +55,28 @@ body {
   font-size: 30px;
   text-align: center;
   resize: none;
+}
+
+.answer-correction {
+  position: absolute;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: inherit;
+  top: 20px;
+  right: 20px;
+}
+
+.answer-feedback {
+  position: absolute;
+  font-size: 30px;
+  top: 83px;
+  right: 20px;
+}
+
+.answer-feedback.correct {
+  color: #95c705
+}
+
+.answer-feedback.wrong {
+  color: #bf1313;
 }
